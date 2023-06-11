@@ -7,8 +7,8 @@ const gameOptionsReq = {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
-    "Client-ID": "vb838qqqsndwhxbu1gg98ljvtavacr",
-    Authorization: "Bearer zkomcikvy6y3dqgffmw7osa8to49fm",
+    "Client-ID": "6hygq7fbg89u6vy8y461opjapupom5",
+    Authorization: "Bearer keo8g52g2qcxljtpzzgowuy6110uhq",
   },
   body: "fields summary,platforms.*,rating,first_release_date,genres.name,screenshots.*,name,cover.*;where cover!=null & themes != (42) & first_release_date <= 631152000 & rating != null;limit 400; ",
 };
