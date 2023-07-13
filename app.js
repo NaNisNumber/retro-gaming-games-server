@@ -12,7 +12,7 @@ const gameOptionsReq = {
     "Client-ID": "6hygq7fbg89u6vy8y461opjapupom5",
     Authorization: "Bearer keo8g52g2qcxljtpzzgowuy6110uhq",
   },
-  body: "fields summary,platforms.*,rating,first_release_date,genres.name,screenshots.*,name,cover.*;where cover!=null & themes != (42) & first_release_date <= 631152000 & rating != null;limit 150; ",
+  body: "fields summary,platforms.*,rating,first_release_date,genres.name,screenshots.*,name,cover.*;where cover!=null & themes != (42) & first_release_date <= 631152000 & rating != null;limit 400; ",
 };
 
 request(gameOptionsReq, function (error, response, body) {
