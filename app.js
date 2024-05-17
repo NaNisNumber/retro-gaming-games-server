@@ -1,6 +1,7 @@
 const request = require("request");
 const http = require("http");
 const url = require("url");
+
 let apiData;
 let gamesData = [];
 let lastPage;
@@ -10,7 +11,7 @@ const gameOptionsReq = {
   headers: {
     "Content-Type": "application/json",
     "Client-ID": "vb838qqqsndwhxbu1gg98ljvtavacr",
-    Authorization: "Bearer vfy1vmyrfsegaywsniv2jdfpvjbm0x",
+    Authorization: "Bearer k6tqiesijg0nn50ozc0kitt405g5dv",
   },
   body: "fields summary,platforms.*,rating,first_release_date,genres.name,screenshots.*,name,cover.*;where cover!=null & themes != (42) & first_release_date <= 631152000 & rating != null;limit 400; ",
 };
@@ -63,4 +64,4 @@ const serverForSendingAllGames = http.createServer((req, res) => {
   }
 });
 
-serverForSendingAllGames.listen(process.env.PORT || 5000, () => {});
+serverForSendingAllGames.listen(process.env.PORT || 3000, "0.0.0.0");
